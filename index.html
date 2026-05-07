@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,4 +128,135 @@
         </div>
     </main>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Practice CSS</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.6)) ,url(https://c4.wallpaperflare.com/wallpaper/716/366/482/anime-anime-girls-uma-musume-pretty-derby-hd-wallpaper-preview.jpg) center center/cover;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1000px;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .cta__btn {
+            display: block;
+            padding: 15px;
+            width: 200px;
+            white-space: nowrap;
+            text-align: center;
+            background-color: red;
+            color: #eee;
+            text-decoration: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .cta__btn--featured {
+            background-color: #ffd700;
+            color: #968421;
+        }
+
+        .cta__btn:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta__btn:active {
+            background-color: darkred;
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta__btn--featured:active {
+            background-color: #daa520;
+            color: #eee;
+        }
+
+        .cta:hover .cta__btn {
+            transform: scale(0.95);
+            opacity: 0.8;
+        }
+
+        .cta .cta__btn:hover {
+            transform: scale(1.02);
+            opacity: 1;
+        }
+
+        .animation {
+            animation: btnAnimation 1s ease-in-out 1s infinite alternate;
+        }
+        
+        .cta:hover .animation {
+            animation: none;
+        }
+
+        .title-style {
+            background-color: rgba(0, 0, 255, 0.4);
+            color: #eee;
+        }
+
+        .no-flex {
+            max-width: max-content;
+        }
+
+        @keyframes btnAnimation {
+            0% {transform: scale(1.0);}
+            100% {transform: scale(1.02);}
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="title">
+                <h1 class="title__headline title-style no-flex">🎵Kamu Pilih Yang Mana?🎵</h1>
+                <p class="title__sub-headline title-style no-flex">🎵Subscribe atau MBG🎵</p>
+            </div>
+
+            <div class="cta">
+                <a href="https://youtube.com/@gentrt?si=zXZggPwqYDtCNcQu" target="_blank" class="cta__btn animation">Subscribe</a>
+                <a href="https://youtube.com/playlist?list=PLJollAiZP6zsNxHfEb23jqJJn7sCH0qFg&si=o_p7lQHGHGa8dpNR" target="_blank" class="cta__btn cta__btn--featured animation">Uma Musume</a>
+            </div>
+        </div>
+    </main>
+</body>
+>>>>>>> 2964f3987fdc2e25d4d8820ef900720a4f1a787e
 </html>
